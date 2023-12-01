@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Photography Portfolio</title>
+    <style>
+        /* Your existing styles here */
+
+        body {
+            /* Additional styles for Firebase script */
+            margin: 0;
+            padding: 0;
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        /* Other styles remain unchanged */
+
+        footer {
+            /* Additional styles for Firebase script */
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Your existing HTML content here -->
+
+    <header>
+        <div class="home-content">
+            <div class="name">Your Name</div>
+            <div class="website-name">Photography Portfolio</div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Photos</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <footer>
+        &copy; 2023 Your Name - Photography Portfolio
+    </footer>
+
+    <!-- Firebase scripts -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js";
+    
+        const firebaseConfig = {
+            apiKey: "AIzaSyB0I-6StXiROsDPGo8WT3UPSjXUkid1o-U",
+            authDomain: "gusmingstwebsite.firebaseapp.com",
+            projectId: "gusmingstwebsite",
+            storageBucket: "gusmingstwebsite.appspot.com",
+            messagingSenderId: "787151027665",
+            appId: "1:787151027665:web:7f4932537ff814da78f4f0",
+            measurementId: "G-D1EWJPCHEV"
+        };
+    
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+</body>
+</html>
