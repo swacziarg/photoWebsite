@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Information</title>
+    <style>
+      /* CSS styles for layout and spacing */
+      .contact-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+      }
+      .bio {
+        max-width: 600px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .image {
+        max-width: 800px;
+        margin-bottom: 20px;
+      }
+      /* New styles for the top-left menu */
+      nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            z-index: 2; /* Set a higher z-index to appear above images and text */
+            padding: 20px;
+        }
+
+        nav a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+  </head>
+  <body onmousemove="shufflePhoneNumber()">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        
+    </nav>
+    <div class="contact-container">
+      <h1>About Gus Mingst</h1>
+      <img src="https://hwchronicle.com/wp-content/uploads/2021/11/IMG_5282-900x675.jpg" alt="My Photo" class="image">
+      <p><strong>Email:</strong> <a href="mailto:gcm1904@gmail.com">gcm1904@gmail.com</a></p>
+      <p><strong>Phone:</strong> <span id="phone-number">310-977-6574</span></p>
+      <div class="bio">
+        <p>This is a short bio about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed turpis id ipsum hendrerit ultricies vitae sit amet metus. In hac habitasse platea dictumst. Suspendisse potenti. Sed efficitur blandit nisl eu finibus. Sed venenatis sapien nec tristique tempor. Etiam at libero lacinia, rhoncus dolor non, molestie risus.</p>
+      </div>
+    </div>
+    <script>
+      // JavaScript code to shuffle phone number digits on mousemove
+      function shufflePhoneNumber() {
+        const phoneNumber = document.getElementById('phone-number');
+        const digits = phoneNumber.innerText.split('');
+        for (let i = 0; i < digits.length; i++) {
+          if (digits[i] !== '-') {
+            digits[i] = Math.floor(Math.random() * 10).toString();
+          }
+        }
+        phoneNumber.innerText = digits.join('');
+      }
+    </script>
+  </body>
+</html>
