@@ -14,7 +14,15 @@
             text-align: center;
             background-color: #f4f4f4;
         }
-
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
         .slideshow-container {
             max-width: 800px;
             margin: auto;
@@ -26,6 +34,7 @@
             display: none;
             margin: 0 auto; /* Center the image */
             max-width: 80%; /* Ensure the image doesn't exceed its container */
+            max-height: 80%;
         }
 
 
@@ -122,9 +131,7 @@
         <div class="mySlides">
             <img src="https://firebasestorage.googleapis.com/v0/b/gusmingstwebsite.appspot.com/o/DSC03733%20(1).jpg?alt=media&token=53dfcf09-64dd-4187-9629-c5e8741efd94" alt="Image 10">
         </div>
-        <div class="mySlides">
-            <img src="https://firebasestorage.googleapis.com/v0/b/gusmingstwebsite.appspot.com/o/DSC03823.jpg?alt=media&token=6a201322-1a55-4747-ba34-ea3d43f820f2" alt="Image 11">
-        </div>
+        
 
 
         <!-- Navigation arrows -->
@@ -160,5 +167,8 @@
 
         showSlides(slideIndex);
     </script>
+    <footer>
+        &copy; 2023 Gus Mingst - Photography Portfolio
+    </footer>
 </body>
 </html>
